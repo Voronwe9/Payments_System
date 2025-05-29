@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('payments', '0001_initial'),
+        ("payments", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='payment',
-            name='amount',
+            model_name="payment",
+            name="amount",
             field=models.DecimalField(decimal_places=2, max_digits=12),
         ),
         migrations.AlterField(
-            model_name='payment',
-            name='document_number',
+            model_name="payment",
+            name="document_number",
             field=models.CharField(max_length=100),
         ),
     ]

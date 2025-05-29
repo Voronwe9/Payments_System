@@ -1,5 +1,7 @@
 from django.db import models
+
 from organizations.models import Organization
+
 
 class Payment(models.Model):
     operation_id = models.UUIDField(unique=True)
@@ -8,6 +10,7 @@ class Payment(models.Model):
     document_number = models.CharField(max_length=100)
     document_date = models.DateTimeField()
     created_at = models.DateTimeField(auto_now_add=True)
+
 
 class BalanceLog(models.Model):
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE)

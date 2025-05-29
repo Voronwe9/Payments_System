@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Payment
+
 
 class PaymentWebhookSerializer(serializers.Serializer):
     operation_id = serializers.UUIDField()
