@@ -1,1 +1,10 @@
 .env
+pyproject.toml
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+*.idea/
+.vscode/
+*.DS_Store
