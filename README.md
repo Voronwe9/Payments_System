@@ -34,19 +34,19 @@
 
 3. **Настроить базу данных (MySQL)**
 
-   *Убедись, что в `settings.py` прописаны правильные параметры подключения к базе(в примере указаны не реальные данные)*:
+  Создай в корне проекта файл .env и добавь туда переменные окружения для подключения к базе данных:
+  Пример .env:
 
    ```python
-   DATABASES = {
-       'default': {
-           'ENGINE': 'django.db.backends.mysql',
-           'NAME': 'payments_db',
-           'USER': 'USER',
-           'PASSWORD': 'PASSWORD',
-           'HOST': 'localhost',
-           'PORT': '3306',
-       }
-   }
+   
+    DEBUG=
+    SECRET_KEY=
+    DB_NAME=DB_NAME
+    DB_USER=DB_USER
+    DB_PASSWORD=DB_PASSWORD
+    DB_HOST=localhost
+    DB_PORT=3306
+
    ```
 
 4. **Выполнить миграции**
