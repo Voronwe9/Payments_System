@@ -1,6 +1,4 @@
 from django.db import models
-
-from django.db import models
 from organizations.models import Organization
 
 class Payment(models.Model):
